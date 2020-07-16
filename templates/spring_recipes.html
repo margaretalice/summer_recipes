@@ -55,7 +55,7 @@
   <div class="card-body">
     <h5 class="card-title">Easter rabbit biscuits.</h5>
     <p class="card-text">These taditional Easter biscuits are flavoured with cinnamon and cut into rabbit shapes, but you can use any cutter you like.</p>
-    <a href= "{{url_for ('Seasonal_recipes', collections.find_one("title","Gooseberry Crumble cake "))}}" class="btn btn-primary">View Recipe</a>
+    <a href= "{{url_for ('Seasonal_recipes.html', Seasonal_recipes=mongo.db.Seasonal_recipes.find(spring))}}" class="btn btn-primary">View Recipe</a>
   </div>
 </div>
 
