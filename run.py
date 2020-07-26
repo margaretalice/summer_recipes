@@ -14,21 +14,10 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-@app.route('/')
-@app.route('/Seasonal_recipes')
-def Seasonal_recipes():
-    return render_template( "Seasonal_recipes.html")
-
-
 
 @app.route('/')
 def index():
     return render_template("index.html")
-
-
-@app.route('/spring')
-def spring():
-    return render_template("spring.html", spring=mongo.db.spring.find())
 
 
 @app.route('/about')
@@ -51,12 +40,14 @@ def winter_recipes():
     return render_template("winter_recipes.html")
 
 
-@app.route('/tasks')
-def tasks():
-    return render_template("tasks.html")
+@app.route('/')
+@app.route('/get_tasks')
+def get_tasks():
+    tasks = mongo.db.tasks,find()
+    return render_template("tasks.html", tasks = tasks)
 
 
-
+    
 @app.route('/my_recipes')
 def my_recipes():
     return render_template("my_recipes.html")
