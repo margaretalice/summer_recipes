@@ -21,22 +21,29 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                        <a class="nav-link" href="{{ url_for('index') }}">Home</a> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                        <a class="nav-link" href="{{ url_for('add_task') }}">Addrecipe</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('winter_recipes') }}">winter_recipes</a>
+                  <li class="nav-item">
+                         <a class="nav-link" href="{{ url_for('winter_recipes') }}">winter_recipes</a>
                     </li>
+                  
                    
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('spring_recipes') }}">spring_recipes</a>
                     </li>
 
                     <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('get_tasks')}}">Recipes</a>
+                        </li>
+
+                  
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('autumn_recipes') }}">autumn_recipes</a>
                     </li>
+
 
                     
                 
@@ -73,19 +80,19 @@
      <footer class="page-footer">
           <div class="container" style= "background-color:#ffe5b4;">
             <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Peaches in the summer</h5>
-                <p class="grey-text text-lighten-4">Peaches in the summer was established to provide an online home for English seasonal recipes and for the viewer to add their own favorites. We look forward to reading your choices.</p>
+            <div class="col l6 s12">
+                <h5 class="black-text">Peaches in the summer</h5>
+                <p class="black-text text-lighten-4">Peaches in the summer was established to provide an online home for English seasonal recipes and for the viewer to add their own favorites. We look forward to reading your choices.</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white -text" >Follow Us</h5>
+                <h5 class="black -text" >Follow Us</h5>
                 <a href="https://www.instagram.com/" target="_blank"><img src="/static/images/instagram-icon.png" alt="Instagram"></a>
                 <a href="https://www.facebook.com/" target="_blank"><img src="/static/images/facebook-icon.png" alt="Facebook"></a>
                 <a href="https://www.twitter.com/" target="_blank"><img src="/static/images/twitter-icon.png" alt="Twitter"></a>
                 <a href="https://www.pinterest.com/" target="_blank"><img src="/static/images/pinterest-icon.png" alt="Pinterest"></a>
               </div>
             </div>
-          </div>
+        
           <div class="footer-copyright">
             <div class="container">
         
