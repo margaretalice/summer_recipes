@@ -10,24 +10,63 @@
         <img class="featurette-image img-responsive" src="https://www.pictorem.com/collection/900_Levente-Bodo_IMG_5735_LR.jpg" style="width:100%;" alt="Generic placeholder image">
     </div>
 </div>
+<hr>
 
- {% for recipe in recipes %} 
-        <div class="col s12 m6 l6">
-          <div class="card medium">
-              <div class="card-image">
-                <a href="{{url_for('winter_recipes', recipe_id = recipe._id)}}"><img src="{{recipe.recipe_image}}" alt="{{recipe.recipe_name}}"></a>
-              </div>
-              <div class="card-title">
-              <div class="card-content">
-                  <a href="{{url_for('winter_recipes', recipe_id = recipe._id)}}"><h6>{{recipe.recipe_Title}}</h6></a>
-                  <p>{{recipe.recipe_description}}</p>
-                </div>
-              <div class="card-action">
-                <a href="{{url_for('winter_recipes', recipe_id = recipe._id)}}">View Recipe >>></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
+<div class="row" style= "background-color:#fffdd0;">
+     <h3 class="suggestion"><span>Why not welcome winter with one of these favourites?</span></h3>
+  
+
+        
+        <div class="col s12 m12 l6" style= "background-color:#fffdd0;"> 
+        <div class="card" style="width:400px; margin:30px 3px;">
+           <img class="card-img-top" src="static/css/img/crumble.jpg" style="height:300px;" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Crumble Mince Pies.</h5>
+    <p class="card-text"> Everyone likes these. They can be assembled well ahead of Christmas, frozen and freshly baked to serve. Ideally, use home-made mincemeat such as fig and almond.</p>
+    <a href="#" class="btn btn-primary">View Recipe</a>
+
+  </div>
+</div>
+
+
+<div class="card" style="width:400px; float:left;  margin:0px 425px;">
+<img class="card-img-top" src="static/css/img/men.jpg" style="height:300px;" alt="Card image cap">
+  <div class="card-body"> 
+    <h5 class="card-title"Gilded Gingerbread Men. </h5>
+    <p class="card-text"> Gilded gingerbreads were made as early as Tudor times: from simple biscuits to huge, exotic moulded affairs,shaped as Kings and Queens with golden crowns. </p>
+   <a href="#" class="btn btn-primary">View Recipe</a>
+     
+  </div>
+</div>
+
+<div class="card" style="width:400px; margin:30px 5px;">
+<img class="card-img-top" src="static/css/img/fish.jpg"  style="height:300px;" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Three fish Pie with Leeks and White Wine.</h5>
+    <p class="card-text">The leeks and wine make this fish pie taste a little more sophisticated than traditiional versions so you could confidently serve it at a casual supper party.</p>
+    <a href="#" class="btn btn-primary">View Recipe</a>
+  </div>
+</div>
+
+<div class="card" style="width:400px; margin:0px 425px;">
+<img class="card-img-top" src="static/css/img/dau.jpg"  style="height:300px;" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Cottage Pie with Dauphinois Potato Topping.</h5>
+    <p class="card-text">A luxurious layer of cream and potato make this dauphinois version so much smarter than the usual cottage pie.</p>
+       <a href="#" class="btn btn-primary">View Recipe</a>
+ 
+  </div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+ 
+     
 
 {% endblock %}
