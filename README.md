@@ -1,39 +1,43 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+<h1>Peaches in the Summer: An online Cookbook.</h1>
+<p>'Peaches in the Summer' is an online cookbook app, built with Flask, and MONGODB,whose aim is to allow the user to store traditional, or contemporary British recipes in one place. These might be recipes handed down, and treasured in families, or discovered on holidays in the UK, or found through research in books, and magazines,and TV shows.</p>
+<p>The user will be able to create, read, update, and delete recipes as they choose, and even to edit, or add new categories e.g. spring could be divided into two categories such as 'early' spring recipes, or 'late' spring recipes, or a new category such as 'Feast Days and Festivals' could be added. This allows the user a great deal of creativity, and the ability, and flexibility to make the cookbook their own.</p>
+<p>The app is scalable, and fully responsive, and easy to navigate. It uses Python3 for its backend logic, and the Flask framework. Bootatrap themes(clean blog) was uses to give a modern, fresh feel to the app. Where necessary for functioning, jQuery was used with Bootstrap, and Materialize was additionally used particularly with the'accordians' dropdown choices of categories, recipe,names, recipe description, recipe methods.<p>
+<h2>UX</h2>
+<p>I created the wireframes and mockups for small screens first, and then adapted them to medium , and larger screens, They can be viewed here:</p>
+<p>My intentions for this app were:</p>
+<ul>
+<li>To creat an online cookbook for those interested in British cookery, whether historical, family based, or contemporary.
+</li>
+<li>It would be split into four categories for each season, spring, summer, autumn, and winter, though these could be added to, or edited.</li>
+<li>I wanted pages for each season reflecting what sort of dishes would be appropriate for that particular time of year. Four cards would display a picture, and enticing description of a recipe, which the user could then click on a button to find fuller details of preparation, ingredients needed, and the method of cooking.</li>
+<li>The app would be visually appealing with a cool, contemporary appearance, which I felt was appropriate for an online cookbook.</li
+>
+<li>The user would be able to create, read, update recipes to their tastes, and delete those they felt were not of interest to them.</li>
+<p>The navigation bar is responsive having break points for smaller, medium, and larger screens. At screens smaller than 360px, the navbar toggles into a dropdown menu suitable for mobils devices.</p>
+<p>The user is greeted on the homepage with a fresh, appealing picture of peaches aimed at enticing the viewer to explore the app further. There is a brief description of the app, and its purpose, followed by an encouragement to the reader to add their own selection of recipes.</p>
+<p> The season pages have an appropriate picture to set the tone of the sort of recipes which might be appropriate and which the user might feel like cooking in this particular season.</p>
+<p> The 'Add Recipes' and 'Edit Recipes' pages contain a form, helpfully broken up into sections for the user to input in a systematic, and consistent manner their new information.</p>
+<h2>Technologies Used.</h2>
+<ul>
+<li>HTML5</li>
+<li>CSS</li>
+<li>Python3</li>
+<li>Flask 1.0.2</li>
+<li>Bootstrap 4.3.1</li>
+<li>Javascript</li>
+<li>jQuery</li>
+<li>MONGODB, a document-oriented database used for the application database.</li>
+<li>Atlas</li>
+<li>Materialize</li>
+<li>Markdown used to write README.md</li>
+<li>Pycharm CE IDE was used as the IDE to write the web application.</li>
+<li>Google Fonts</li>
+<li>Git for version control</li>
+<li>Github as the remote repository</li>
+<li>Heroku</li>
+</ul>
 
-Welcome margaretalice,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
 
-## Gitpod Reminders
+</ul>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
