@@ -36,8 +36,18 @@
 <li>Github as the remote repository</li>
 <li>Heroku</li>
 </ul>
-
-
-
+<p>All my HTML nd CSS was checked using the following validators:
+<ul>
+<li>HTML Validator</li>
+<li>CSS Validator</li>
 </ul>
+<h2>Testing</h2>
+<p>I set flask's debugger to true, so that when any error occured I could get guidance on the nature of the error because flask would display this error in the view explaining why the app had crashed.</p>
+<p> Myost of the testing I did was manual, and every step was contiually tested to make sure that the app ran successfully. When I encountered the errors, I worked tirelessly to try and resolve them. I checked that when the user clicked on one of the season pages, the recipe cards would display along with the appropriate image, description and link to the full recipe on 'recipes.html' page9'recipes' on the navbar.</p>
+<p>Clicking on 'recipes' gave a detailed view of all the recipes from each season category.</p>
+<p>I checked that when clicking on 'categories' each category created in MONGODB would appear along with an edit and delete button, and that the edit button took you to an edit category form where you could edit the category and save the changes, and I further checked that these changes were made in my MONGODB database. I checked, and then restore that if a category was deleted it, too, was deleted from the MONGODB database.</p>
+
+
+
+
 
