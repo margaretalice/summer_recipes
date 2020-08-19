@@ -1,30 +1,5 @@
 {% extends 'base.html' %} {% block content %}
 
- <h1>About Us</h1>
-
-<p>'Peaches in the Summer' was founded in early 2020 to celebrate and record English seasonal recipes. In this online cookery book, you'll find Easter rabbit biscuits, learn how to crystallise flowers, celebrate winter with a slice or two of a stunning chocolate and gold cake, or make your own maple and pecan leaves.</p>
-<p>But we want you also to add, and edit your own recipes, perhaps your grandmother's pumpkin soup with sage butter, or that glorious 'Devil's Food cake' you discovered on a trip to the Lake District.</p>
-<p>It's up to you, but, above all, have fun.</p>
-
-
-
- {% for recipe in recipes %} 
-        <div class="col s12 m6 l6">
-          <div class="card medium">
-              <div class="card-image">
-                <a href="{{url_for('autumn_recipes', recipe_id = recipe._id)}}"><img src="{{recipe.recipe_image}}" alt="{{recipe.recipe_name}}"></a>
-              </div>
-              <div class="card-title">
-              <div class="card-content">
-                  <a href="{{url_for('autumn_recipes', recipe_id = recipe._id)}}"><h6>{{recipe.recipe_Title}}</h6></a>
-                  <p>{{recipe.recipe_description}}</p>
-                </div>
-              <div class="card-action">
-                <a href="{{url_for('autumn_recipes', recipe_id = recipe._id)}}">View Recipe >>></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
+ 
      
 {% endblock %}
