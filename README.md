@@ -6,7 +6,7 @@
 <p>I created the wireframes and mockups for small screens first, and then adapted them to medium , and larger screens, They can be viewed here:</p>
 <p>My intentions for this app were:</p>
 <ul>
-<li>To creat an online cookbook for those interested in British cookery, whether historical, family based, or contemporary.
+<li>To create an online cookbook for those interested in British cookery, whether historical, family based, or contemporary.
 </li>
 <li>It would be split into four categories for each season, spring, summer, autumn, and winter, though these could be added to, or edited.</li>
 <li>I wanted pages for each season reflecting what sort of dishes would be appropriate for that particular time of year. Four cards would display a picture, and enticing description of a recipe, which the user could then click on a button to find fuller details of preparation, ingredients needed, and the method of cooking.</li>
@@ -43,7 +43,7 @@
 </ul>
 <h2>Testing</h2>
 <p>I set flask's debugger to true, so that when any error occured I could get guidance on the nature of the error because flask would display this error in the view explaining why the app had crashed.</p>
-<p> Myost of the testing I did was manual, and every step was contiually tested to make sure that the app ran successfully. When I encountered the errors, I worked tirelessly to try and resolve them. I checked that when the user clicked on one of the season pages, the recipe cards would display along with the appropriate image, description and link to the full recipe on 'recipes.html' page9'recipes' on the navbar.</p>
+<p> Most of the testing I did was manual, and every step was contiually tested to make sure that the app ran successfully. When I encountered the errors, I worked tirelessly to try and resolve them. I checked that when the user clicked on one of the season pages, the recipe cards would display along with the appropriate image, description and link to the full recipe on 'recipes.html' page9'recipes' on the navbar.</p>
 <p>Clicking on 'recipes' gave a detailed view of all the recipes from each season category.</p>
 <p>I checked that when clicking on 'categories' each category created in MONGODB would appear along with an edit and delete button, and that the edit button took you to an edit category form where you could edit the category and save the changes, and I further checked that these changes were made in my MONGODB database. I checked, and then restore that if a category was deleted it, too, was deleted from the MONGODB database.</p>
 <h2>Database Schema</h2>
@@ -58,6 +58,8 @@ user_name
 <li>user_method</li>
 </ul>
 </p>
+<h3>Category testing</h3>
+<p>I manually tested that when the user clicks onto the 'Add Category' button that the new category appeared in the MONGODB database for 'Gilded Gingerbread'. I successfully added the category of 'Festival Celebratory Cooking' by clicking on the 'add button'. I manually tested that clicking on the 'Edit Category' button did lead to an 'Edit Form' in which changes to the category name could be made, or there was the option to cancel.</p>
 
 
 
